@@ -62,7 +62,7 @@ Options:
 // 1000000].
 
 fn main() {
-    let path = Path::new("dtp_client.log");
+    let path = Path::new("./log/dtp_client.log");
     let display = path.display();
     // Open a file in write-only mode, returns `io::Result<File>`
     let mut file = match File::create(&path) {
